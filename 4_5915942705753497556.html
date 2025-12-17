@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    /* ===== Profile Section (Flexbox) ===== */
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .profile img {
+      width: 230px;
+      height: 300px;
+      object-fit: circle;
+      border-radius: 0%;
+      display: block;
+    }
+
+    .bio {
+      max-width: 1000px;
+      font-size: 15px;
+    }
+
+    /* ===== Skills Section (Grid) ===== */
+    .skills {
+      padding: 50px;
+      background-color: #e0e0e0;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .skill {
+      background-color: #517be4;
+      color: rgb(254, 254, 254);
+      padding: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact {
+      padding: 40px;
+      background-color: white;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      display: block;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #1e3a5f;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HAILEMARIAM SISAY</h1>
+    <p>Electrical and Computing Engineering Student</p>
+  </header>
+
+  <!-- Profile -->
+  <section class="profile">
+    <img src="./profile.jpj/5909264646248533093.jpg" alt="Profile Image">
+    <div class="bio">
+      <p>
+       I am a web development student who enjoys creating simple, responsive websites using HTML and CSS. I am also passionate about creativity and innovation, with experience in graphic design, video editing, motion graphics, social media management, and content creation. I focus on bringing ideas to life through impactful visuals and engaging digital content. I have worked with businesses and creators to enhance their digital presence, always aiming to meet goals and exceed expectations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML/CSS</div>
+      <div class="skill">Graphics Design</div>
+      <div class="skill">Video Editing</div>
+      <div class="skill">Content Creation</div>
+      <div class="skill">Social Media Manager</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2 style="text-align:center;">Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Thanks for visisting my profile </p>
+  </footer>
+
+</body>
+</html>
